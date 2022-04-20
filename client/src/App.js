@@ -22,6 +22,8 @@ import Home from "./pages/homepage";
 import FindMaids from "./pages/findMaidsPage";
 import MaidDetail from "./pages/maidDetail";
 import Checkout from "./pages/checkoutPage";
+import Login from "./pages/login";
+import SignUp from "./pages/signUp";
 
 function App() {
   const [customer, setcustomer] = useState({});
@@ -29,12 +31,20 @@ function App() {
   return (
     <>
       <div className="App">
-        <Navbar></Navbar>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           {
             //authentication routes
           }
+          <Route
+            path="/signup"
+            element={<SignUp />}
+          />
+          <Route
+            path="/login"
+            element={<Login />}
+          />
           <Route
             path="/maidSignup"
             element={<MaidSignup setmaid={setmaid} />}
