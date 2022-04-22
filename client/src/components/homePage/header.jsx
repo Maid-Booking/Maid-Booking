@@ -1,35 +1,47 @@
 import React from "react";
-import { Navbar, Nav, Container, Button } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 function NNavbar() {
   return (
     <>
       <Navbar bg="dark" variant="dark">
-        <Container style={{ display:"flex", alignItems:"center", justifyContent:"space-between" }}>
+        <Container>
           <Navbar.Brand href="/">Maid Booking</Navbar.Brand>
-
-          <Nav>
+          <Nav className="me-auto">
             <Nav.Link>
-              <Button variant="light">
-                <Link
-                  to="/signup"
-                  style={{ textDecoration: "none", color: "inherit" }}
-                >
-                  Sign Up
-                </Link>
-              </Button>{' '}
+              {" "}
+              <Link
+                to="/maidSignup"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                Maid Signup
+              </Link>
             </Nav.Link>
-
             <Nav.Link>
-              <Button variant="light">
-                <Link
-                  to="/login"
-                  style={{ textDecoration: "none", color: "inherit" }}
-                >
-                  Login
-                </Link>
-              </Button>{' '}
+              {" "}
+              <Link
+                to="/customerSignup"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                Customer Signup
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link
+                to="/maidLogin"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                Maid Login
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link
+                to="/customerLogin"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                Customer Login
+              </Link>
             </Nav.Link>
           </Nav>
         </Container>

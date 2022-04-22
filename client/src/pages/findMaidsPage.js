@@ -7,7 +7,7 @@ function FindMaids() {
   const [filters, setfilters] = useState({});
 
   return (
-    <div  style={{ width: "800px", marginTop: "50px", marginRight: "auto", marginLeft: "auto" }}>
+    <div className="findMaidsPage">
       <Filters filters={filters} setfilters={setfilters} />
       <SortBy filters={filters} setfilters={setfilters} />
       <ShowMaids filters={filters} />

@@ -8,7 +8,7 @@ function SortBy(props) {
   };
   return (
     <>
-      {/* <h5>show following sorting methods: rating,experience, age, price;</h5> */}
+      <h5>show following sorting methods: rating,experience, age, price;</h5>
     </>
   );
 }

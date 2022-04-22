@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 function Carousel() {
   return (
@@ -11,14 +10,7 @@ function Carousel() {
             Here we provide monthly subscription for booking maids at reasonable
             prices.
           </p>
-          <button className="mainButton">
-            <Link
-              to="/findMaids"
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
-              Find maids
-            </Link>
-          </button>
+          <button className="mainButton">Find Maids</button>
         </div>
       </div>
     </>
